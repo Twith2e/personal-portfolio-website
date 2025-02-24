@@ -4,7 +4,7 @@ import Projects from "../components/Projects";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <Hero />
       <Projects />
       <Education />

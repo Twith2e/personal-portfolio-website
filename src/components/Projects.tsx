@@ -139,7 +139,7 @@ const projectsInfos = [
 export default function Projects() {
   return (
     <div className="font-jakarta text-[#fafafa] flex flex-col gap-5">
-      <h2 className="text-center text-3xl my-3 font-bold">Featured Projects</h2>
+      <h2 className="text-center text-3xl font-bold">Featured Projects</h2>
       <span className="text-base">
         I build projects from 0 to 1, turning ideas into reality. Take a look at
         some of my favorite projects below.

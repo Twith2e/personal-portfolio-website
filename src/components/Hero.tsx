@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="font-jakarta md:py-24 pt-4 mb-12 flex flex-col items-center">
+    <div className="font-jakarta md:py-24 pt-4 flex flex-col items-center leading-6">
       <div className="flex">
         <div className="flex flex-col">
           <h1 className="text-2xl md:7xl font-bold">Hi, I'm Abdulbasit 👋</h1>
@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
       </div>
       <div>
-        <h2>About</h2>
+        <h2 className="text-xl font-bold">About</h2>
         <p>
           I'm a passionate web developer who loves turning ideas into
           functional, user-friendly applications. From crafting sleek weather
