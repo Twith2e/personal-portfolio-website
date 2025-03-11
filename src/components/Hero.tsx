@@ -31,22 +31,20 @@ export default function Hero() {
               bottom: "0",
               color: "transparent",
             }}
-            src="https://avatars.githubusercontent.com/u/147788165?v=4"
+            src="/avatar.jpeg"
           />
         </div>
       </div>
       <div>
         <h2 className="text-xl font-bold">About</h2>
         <p className="text-[#A3A3A3]">
-          I'm a passionate web developer who loves turning ideas into
-          functional, user-friendly applications. From crafting sleek weather
-          apps to automating LeetCode-to-GitHub workflows, I enjoy building
-          tools that make life easier. Recently, I developed Leet2Git, a tool
-          that transforms LeetCode problems into well-structured GitHub
-          repositories, andGet-My-Attendance, a WiFi-based attendance system. I
-          also won the Best About Us Page Award in a web design competition and
-          ranked Top 5 in a college hackathon. Currently, I'm sharpening my web
-          development skills while gearing up to explore AI. 🚀
+          I'm a fullstack developer who thrives on crafting seamless,
+          interactive web experiences. I specialize in React and Nodejs. My
+          portfolio showcases a blend of creative design and meticulous
+          code—from manipulating image aesthetics and responsive layouts to
+          integrating external links and interactive elements. I'm passionate
+          about writing clean, efficient code that not only meets design goals
+          but also enhances user engagement and performance. 🚀
         </p>
       </div>
     </div>

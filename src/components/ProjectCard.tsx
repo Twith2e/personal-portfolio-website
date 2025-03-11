@@ -12,7 +12,7 @@ export default function ProjectCard({
   return (
     <div className="flex flex-col gap-2 border-2 border-white rounded-lg pb-4">
       <img
-        className="rounded-t-lg h-[250px]"
+        className="rounded-t-lg h-[200px]"
         height="110%"
         width="auto"
         src={img}
