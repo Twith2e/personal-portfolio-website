@@ -11,7 +11,13 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="flex flex-col gap-2 border-2 border-white rounded-lg pb-4">
-      <img className="rounded-t-lg" src={img} alt="project-screenshot" />
+      <img
+        className="rounded-t-lg h-[250px]"
+        height="110%"
+        width="auto"
+        src={img}
+        alt="project-screenshot"
+      />
       <h2 className="text-lg font-bold my-1 px-2">{sitename}</h2>
       <div className="flex gap-2 items-center px-2">
         <span
@@ -25,12 +31,12 @@ export default function ProjectCard({
         </span>
         <span className="text-sm">{date}</span>
       </div>
-      <div className="flex flex-col gap-3 px-2">
-        <p>{summary}</p>
+      <div className="flex flex-col gap-3 px-2 font-jakarta">
+        <p className="text-[#A3A3A3] text-sm">{summary}</p>
         <div className="flex-wrap flex items-center gap-2">
           {languages.map((language, index) => (
             <div
-              className="bg-[#262626] text-xs px-2 py-1 rounded-sm"
+              className="bg-[#262626] text-xs px-2 py-1 rounded-sm font-semibold text-[#fafafa]"
               key={index}
             >
               {language}

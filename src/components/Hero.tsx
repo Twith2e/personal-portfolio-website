@@ -1,9 +1,11 @@
 export default function Hero() {
   return (
-    <div className="font-jakarta md:py-24 pt-4 flex flex-col items-center leading-6">
-      <div className="flex">
+    <div className="font-jakarta md:py-24 pt-4 flex flex-col items-center leading-6 md:px-12">
+      <div className="flex gap-3">
         <div className="flex flex-col">
-          <h1 className="text-2xl md:7xl font-bold">Hi, I'm Abdulbasit 👋</h1>
+          <h1 className="text-2xl md:text-7xl font-bold" id="top">
+            Hi, I'm Abdulbasit 👋
+          </h1>
           <p className="md:text-xl">
             Passionate developer with a love for creating innovative solutions.
             I specialize in web development and enjoy working with various
@@ -35,7 +37,7 @@ export default function Hero() {
       </div>
       <div>
         <h2 className="text-xl font-bold">About</h2>
-        <p>
+        <p className="text-[#A3A3A3]">
           I'm a passionate web developer who loves turning ideas into
           functional, user-friendly applications. From crafting sleek weather
           apps to automating LeetCode-to-GitHub workflows, I enjoy building

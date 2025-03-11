@@ -6,7 +6,8 @@ const projectsInfos = [
     sitename: "Shoplift",
     progress: "Completed",
     date: "Oct 2024",
-    summary: "blah blah bla",
+    summary:
+      "Shoplift is a multi-vendor e-commerce web app. Sellers can list products with prices, upload up to fours images for each product, they can add as many features as they want for each product; they also have a dashboard for monitoring products sold, total sales made; they can as well monitor products quantity, update the quantity, edit and change products description, name and features. Buyers can search for products and either buy searched prouduct or add the product cart, and for better user experience, buyers can view similar items when previewing a product.",
     languages: ["HTML", "CSS", "JavaScript", "Toast", "Paystack", "Firebase"],
     links: [
       {
@@ -46,9 +47,10 @@ const projectsInfos = [
     img: "/tapo.png",
     sitename: "Tapo",
     progress: "In Progress",
-    date: "Oct 2024",
-    summary: "blah blah bla",
-    languages: ["ReactJS", "NodeJS", "OAuth2"],
+    date: "Jan 2025",
+    summary:
+      "Tapo, which the name can still change, is a messaging app which is going to have a voice message feature, video chat feature.",
+    languages: ["ReactJS", "NodeJS", "OAuth2", "Socket.io", "WebSocket"],
     links: [
       {
         url: "https://github.com/Twith2e/Tapo",
@@ -73,7 +75,8 @@ const projectsInfos = [
     sitename: "Trav-el",
     progress: "Completed",
     date: "Oct 2024",
-    summary: "blah blah bla",
+    summary:
+      "This is a travel agency web app when you can book for tours and a flight for the tours, you can book hotel rooms for your stay at your preferred destination. You can also check your bookings history to keep track of your amazing adventures.",
     languages: ["HTML", "CSS", "JavaScript", "Toast", "Paystack", "Firebase"],
     links: [
       {
@@ -97,8 +100,9 @@ const projectsInfos = [
     img: "/b&b.png",
     sitename: "Bolt and Beams",
     progress: "Completed",
-    date: "Oct 2024",
-    summary: "blah blah bla",
+    date: "Sept 2024",
+    summary:
+      "This is a website for a construction company located in Abuja, Nigeria that deals with renovation as well full on constructions handling from the design down to the final product.",
     languages: ["HTML", "CSS", "JavaScript", "EmailJs"],
     links: [
       {
@@ -138,24 +142,26 @@ const projectsInfos = [
 
 export default function Projects() {
   return (
-    <div className="font-jakarta text-[#fafafa] flex flex-col gap-5">
+    <div className="font-jakarta text-[#fafafa] flex flex-col gap-5 md:px-12">
       <h2 className="text-center text-3xl font-bold">Featured Projects</h2>
-      <span className="text-base">
+      <span className="text-base text-[#A3A3A3]">
         I build projects from 0 to 1, turning ideas into reality. Take a look at
         some of my favorite projects below.
       </span>
-      {projectsInfos.map((info, index) => (
-        <ProjectCard
-          key={index}
-          img={info.img}
-          sitename={info.sitename}
-          progress={info.progress}
-          date={info.date}
-          summary={info.summary}
-          languages={info.languages}
-          links={info.links}
-        />
-      ))}
+      <div className="md:grid md:grid-cols-3 md:gap-4">
+        {projectsInfos.map((info, index) => (
+          <ProjectCard
+            key={index}
+            img={info.img}
+            sitename={info.sitename}
+            progress={info.progress}
+            date={info.date}
+            summary={info.summary}
+            languages={info.languages}
+            links={info.links}
+          />
+        ))}
+      </div>
     </div>
   );
 }

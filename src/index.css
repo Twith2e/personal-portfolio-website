@@ -1,9 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 .font-jakarta {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.timeline img {
+  display: block;
+  width: 150px;
+  /* height: 150px; */
+  -webkit-mask-image: radial-gradient(circle, white 50%, transparent 51%);
+  mask-image: radial-gradient(circle, white 50%, transparent 51%);
+}
+
+nav{
+  box-shadow:  0 -20px 80px -20px #ffffff1f
+}
+
+/* .timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+
+.timeline-item {
+  margin: 10px 0;
+  padding: 20px;
+  background: #fff;
+  border-left: 3px solid #007bff;
+  position: relative;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  font-size: 1.2em;
+} */
+
 
 @import 'tailwindcss'
