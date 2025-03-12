@@ -1,7 +1,11 @@
 export default function NavBar() {
   return (
     <nav className="bg-[#161617] w-fit flex items-center rounded-full border-1 border-[#A3A3A3] p-2 px-1">
-      <a className="text-white hover:bg-gray-800 rounded-full p-3" href="#top">
+      <a
+        aria-label="homepage"
+        className="text-white hover:bg-gray-800 rounded-full p-3"
+        href=""
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -15,8 +19,10 @@ export default function NavBar() {
         </svg>
       </a>
       <a
+        aria-label="check out my github profile"
         href="https://github.com/Twith2e"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-white hover:bg-gray-800 rounded-full p-3 border-l-1 border-gray-100"
       >
         <svg
@@ -32,7 +38,10 @@ export default function NavBar() {
         </svg>
       </a>
       <a
-        href="https://"
+        aria-label="reach me on linkedin"
+        href="https://www.linkedin.com/in/abdulbasit-adebajo-452934269/"
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-white hover:bg-gray-800 rounded-full p-3"
       >
         <svg
@@ -65,7 +74,13 @@ export default function NavBar() {
           </g>
         </svg>
       </a>
-      <a href="" className="text-white hover:bg-gray-800 rounded-full p-3">
+      <a
+        aria-label="contact me via whatsapp"
+        href="https://wa.me/+2348061417226"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white hover:bg-gray-800 rounded-full p-3"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -97,7 +112,10 @@ export default function NavBar() {
         </svg>
       </a>
       <a
-        href=""
+        aria-label="contact me via telegram"
+        href="https://t.me/Te3ee"
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-white hover:bg-gray-800 rounded-full p-3 border-r-1 border-gray-100"
       >
         <svg
@@ -131,7 +149,7 @@ export default function NavBar() {
         </svg>
       </a>
       <div className="flex items-center">
-        <button className="px-2">
+        <button aria-label="theme-toggle button" className="px-2">
           <svg
             width="20"
             height="20"

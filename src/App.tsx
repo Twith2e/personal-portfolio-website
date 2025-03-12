@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="">
       <Routes>
-        <Route path="" element={<PageLayout />}>
+        <Route path="/" element={<PageLayout />}>
           <Route index element={<LandingPage />} />
         </Route>
       </Routes>
