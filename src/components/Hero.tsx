@@ -8,7 +8,7 @@ export default function Hero() {
           </h1>
           <p className="md:text-xl">
             Passionate developer with a love for creating innovative solutions.
-            I specialize in web development and enjoy working with various
+            I specialize in software development and enjoy working with various
             technologies to bring ideas to life. My goal is to build
             applications that are not only functional but also user-friendly and
             visually appealing.🤠
@@ -35,16 +35,19 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div>
+      <div className="mt-12">
         <h2 className="text-xl font-bold">About</h2>
         <p className="text-[#A3A3A3]">
-          I'm a fullstack developer who thrives on crafting seamless,
-          interactive web experiences. I specialize in React and Nodejs. My
-          portfolio showcases a blend of creative design and meticulous
-          code—from manipulating image aesthetics and responsive layouts to
-          integrating external links and interactive elements. I'm passionate
-          about writing clean, efficient code that not only meets design goals
-          but also enhances user engagement and performance. 🚀
+          From messing around with{" "}
+          <a href="freecodecamp.com" target="_blank" rel="noopener noreferrer">
+            freecodecamp
+          </a>{" "}
+          to struggling with cs50's{" "}
+          <span className="font-bold">Introduction to Computer Science</span> to
+          now enjoying solving various clients's problems with code. I am a
+          Fullstack Software Engineer who cares about attention to details in
+          order to achieve the end results with good user interface without
+          sacrificing user experience.🚀
         </p>
       </div>
     </div>

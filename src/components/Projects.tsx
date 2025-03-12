@@ -148,7 +148,7 @@ export default function Projects() {
         I build projects from 0 to 1, turning ideas into reality. Take a look at
         some of my favorite projects below.
       </span>
-      <div className="md:grid md:grid-cols-3 md:gap-4">
+      <div className="lg:grid lg:grid-cols-3 lg:gap-4 flex flex-col gap-5">
         {projectsInfos.map((info, index) => (
           <ProjectCard
             key={index}
