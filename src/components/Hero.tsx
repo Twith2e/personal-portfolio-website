@@ -31,7 +31,7 @@ export default function Hero() {
               bottom: "0",
               color: "transparent",
             }}
-            src="/avatar.jpeg"
+            src="/me.avif"
           />
         </div>
       </div>
