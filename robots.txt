@@ -6,4 +6,4 @@ Allow: /
 Allow: /public/
 
 # Corrected sitemap URL
-Sitemap: https://www.boltandbeams.com.ng/sitemap.xml
+Sitemap: https://abdulbasitadebajo.vercel.app/sitemap.xml
