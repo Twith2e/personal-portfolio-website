@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+Allow: /public/
+
+# Corrected sitemap URL
+Sitemap: https://www.boltandbeams.com.ng/sitemap.xml
