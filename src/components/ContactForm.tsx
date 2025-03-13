@@ -19,6 +19,8 @@ export default function ContactForm() {
   });
 
   async function onSubmit(data: contactFormType) {
+    console.log(data);
+
     setIsLoading(true);
     try {
       const response = await axios.post("/api/sendMail", {
