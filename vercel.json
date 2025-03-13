@@ -1,7 +1,9 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.ts": {}
+    "api/**/*.ts": {
+      "runtime": "nodejs22@22.11.0"
+    }
   },
   "routes": [
     {
