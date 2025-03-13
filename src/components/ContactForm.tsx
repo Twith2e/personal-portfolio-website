@@ -23,8 +23,7 @@ export default function ContactForm() {
 
     setIsLoading(true);
     try {
-      const response = await axios.post("/api/sendMail", {
-        data,
+      const response = await axios.post("/api/sendMail", data, {
         headers: { "Content-Type": "application/json" },
       });
 
