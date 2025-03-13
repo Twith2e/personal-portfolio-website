@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+
 import {
   contactFormSchema,
   contactFormType,
@@ -21,8 +22,8 @@ export default function ContactForm() {
     setIsLoading(true);
     try {
       const response = await axios.post("/api/sendMail", {
-        headers: { ContentType: "application/json" },
-        body: data,
+        data,
+        headers: { "Content-Type": "application/json" },
       });
 
       if (response.status === 200) {
