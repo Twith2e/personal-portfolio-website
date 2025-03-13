@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Education from "../components/Education";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
@@ -41,9 +42,18 @@ export default function LandingPage() {
           content="https://abdulbasit-alpha.vercel.app"
         />
       </Helmet>
-      <Hero />
-      <Projects />
-      <Education />
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section>
+        <Education />
+      </section>
+      <section>
+        <ContactForm />
+      </section>
     </div>
   );
 }
