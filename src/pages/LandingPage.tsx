@@ -22,6 +22,7 @@ export default function LandingPage() {
           content="A portfolio website showing my skills, experience, education and projects."
         />
         <meta property="og:image" content="/favicon.png" />
+        <meta property="og:site_name" content="Abdulbasit Adebajo" />
         <meta
           property="og:url"
           content="https://abdulbasit-alpha.vercel.app/"
