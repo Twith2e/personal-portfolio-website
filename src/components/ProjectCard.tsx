@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { ProjectCardProps } from "../models/ProjectCard.model";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function ProjectCard({
   img,
@@ -9,8 +11,13 @@ export default function ProjectCard({
   languages,
   links,
 }: ProjectCardProps) {
+  const { darkMode } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col gap-2 border-2 border-white rounded-lg pb-4">
+    <div
+      className={`flex flex-col gap-2 border-2 rounded-lg pb-4 ${
+        darkMode ? "border-white" : "border-gray-500"
+      }`}
+    >
       <img
         className="rounded-t-lg aspect-auto"
         height="110%"
@@ -32,7 +39,13 @@ export default function ProjectCard({
         <span className="text-sm">{date}</span>
       </div>
       <div className="flex flex-col gap-3 px-2 font-jakarta">
-        <p className="text-[#A3A3A3] text-sm">{summary}</p>
+        <p
+          className={`text-sm ${
+            darkMode ? "text-[#A3A3A3]" : "text-[#08090A]"
+          }`}
+        >
+          {summary}
+        </p>
         <div className="flex-wrap flex items-center gap-2">
           {languages.map((language, index) => (
             <div
@@ -46,7 +59,11 @@ export default function ProjectCard({
         <div className="flex gap-2 items-center">
           {links.map((link, index) => (
             <a
-              className="flex items-center gap-2 bg-[#fafafa] text-black text-sm font-semibold w-fit py-1 px-2 rounded-lg hover:scale-[1.04]"
+              className={`flex items-center gap-2 text-sm font-semibold w-fit py-1 px-2 rounded-lg hover:scale-[1.04] ${
+                darkMode
+                  ? "bg-[#fafafa] text-black"
+                  : "bg-[#08090A] text-[#fafafa]"
+              }`}
               key={index}
               href={link.url}
               rel="noopener noreferrer"

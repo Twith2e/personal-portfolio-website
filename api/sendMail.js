@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       subject: "Enquiry From Portfolio Website",
-      html: `<h1>Hi, Abdulbasit</h1> <br/> <p>This is ${req.body.name} contacting you from your personal portfolio website</p> <br/> <p>${req.body.message}</p> <br/> <p>For more informatio, you can reach me via my email: ${req.body.email}</p>`,
+      html: `<p>Hi, Abdulbasit</p> <br/> <span>This is ${req.body.name} contacting you from your personal portfolio website</span> <br/> <p>${req.body.message}</p> <br/> <span>For more information, you can reach me via my email: ${req.body.email}</span>`,
     });
     res.status(200).json({ success: true, message: "Email sent!" });
   } catch (error) {

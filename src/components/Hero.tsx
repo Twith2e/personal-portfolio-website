@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
+
 export default function Hero() {
+  const { darkMode } = useContext(ThemeContext);
   return (
     <div className="font-jakarta md:py-24 pt-4 flex flex-col items-center leading-6 md:px-12">
       <div className="flex gap-3">
@@ -37,7 +41,7 @@ export default function Hero() {
       </div>
       <div className="mt-12">
         <h2 className="text-xl font-bold">About</h2>
-        <p className="text-[#A3A3A3]">
+        <p className={`${darkMode ? "text-[#A3A3A3]" : "text-black"}`}>
           From messing around with{" "}
           <a href="freecodecamp.com" target="_blank" rel="noopener noreferrer">
             freecodecamp
