@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 
 export type ProjectCardProps = {
   img: string;
+  avif: string;
+  webp: string;
   sitename: string;
   progress: string;
   date: string;

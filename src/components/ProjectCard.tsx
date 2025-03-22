@@ -4,6 +4,8 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function ProjectCard({
   img,
+  avif,
+  webp,
   sitename,
   progress,
   date,
@@ -18,13 +20,17 @@ export default function ProjectCard({
         darkMode ? "border-white" : "border-gray-500"
       }`}
     >
-      <img
-        className="rounded-t-lg aspect-auto"
-        height="110%"
-        width="auto"
-        src={img}
-        alt="project-screenshot"
-      />
+      <picture>
+        <source srcSet={avif} type="image/avif" />
+        <source srcSet={webp} type="image/webp" />
+        <img
+          className="rounded-t-lg aspect-auto"
+          height="110%"
+          width="auto"
+          src={img}
+          alt="project-screenshot"
+        />
+      </picture>
       <h2 className="text-lg font-bold my-1 px-2">{sitename}</h2>
       <div className="flex gap-2 items-center px-2">
         <span

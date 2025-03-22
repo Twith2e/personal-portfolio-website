@@ -122,7 +122,7 @@ export default function ContactForm() {
         </div>
         <div className="flex justify-center w-full">
           <button
-            className={`mt-9 flex justify-center px-3 py-2 rounded-lg cursor-pointer disabled:cursor-not-allowed disabled:bg-gray-200 ${
+            className={`mt-9 flex justify-center px-3 py-2 rounded-lg cursor-pointer disabled:cursor-not-allowed disabled:bg-gray-200 hover:opacity-70 ${
               darkMode ? "bg-[#fff] text-[#262626]" : "text-[#fff] bg-[#262626]"
             }`}
             disabled={isLoading}
