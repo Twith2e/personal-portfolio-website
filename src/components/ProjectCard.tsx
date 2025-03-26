@@ -62,7 +62,7 @@ export default function ProjectCard({
             </div>
           ))}
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center mt-3">
           {links.map((link, index) => (
             <a
               className={`flex items-center gap-2 text-sm font-semibold w-fit py-1 px-2 rounded-lg hover:scale-[1.04] ${

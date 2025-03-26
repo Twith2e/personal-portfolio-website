@@ -15,7 +15,7 @@ export default function NavBar() {
       <a
         aria-label="homepage"
         className={`text-white rounded-full p-3 ${
-          darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+          darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
         }`}
         href=""
       >
@@ -37,7 +37,7 @@ export default function NavBar() {
         target="_blank"
         rel="noopener noreferrer"
         className={`text-white rounded-full p-3 left ${
-          darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+          darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
         }`}
       >
         <svg
@@ -58,7 +58,7 @@ export default function NavBar() {
         target="_blank"
         rel="noopener noreferrer"
         className={`text-white rounded-full p-3 ${
-          darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+          darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
         }`}
       >
         <svg
@@ -97,7 +97,7 @@ export default function NavBar() {
         target="_blank"
         rel="noopener noreferrer"
         className={`text-white rounded-full p-3 ${
-          darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+          darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
         }`}
       >
         <svg
@@ -131,40 +131,29 @@ export default function NavBar() {
         </svg>
       </a>
       <a
-        aria-label="contact me via telegram"
-        href="https://t.me/Te3ee"
-        target="_blank"
+        aria-label="reach me via my email"
+        href="mailto:abdulbasitadebajo1619@gmail.com"
         rel="noopener noreferrer"
         className={`text-white rounded-full p-3 right ${
-          darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+          darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
         }`}
       >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
           width="20"
           height="20"
-          viewBox="0,0,256,256"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <g
-            fill={`${darkMode ? "#fafafa" : "#08090A"}`}
-            fillRule="nonzero"
-            stroke="none"
-            strokeWidth="1"
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            strokeMiterlimit="10"
-            strokeDasharray=""
-            strokeDashoffset="0"
-            fontFamily="none"
-            fontWeight="none"
-            fontSize="none"
-            textAnchor="none"
-            style={{ mixBlendMode: "normal" }}
-          >
-            <g transform="scale(5.12,5.12)">
-              <path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path>
+          <g id="style=fill">
+            <g id="email">
+              <path
+                id="Subtract"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M7 2.75C5.38503 2.75 3.92465 3.15363 2.86466 4.1379C1.79462 5.13152 1.25 6.60705 1.25 8.5V15.5C1.25 17.393 1.79462 18.8685 2.86466 19.8621C3.92465 20.8464 5.38503 21.25 7 21.25H17C18.615 21.25 20.0754 20.8464 21.1353 19.8621C22.2054 18.8685 22.75 17.393 22.75 15.5V8.5C22.75 6.60705 22.2054 5.13152 21.1353 4.1379C20.0754 3.15363 18.615 2.75 17 2.75H7ZM19.2285 8.3623C19.5562 8.10904 19.6166 7.63802 19.3633 7.31026C19.1101 6.98249 18.6391 6.9221 18.3113 7.17537L12.7642 11.4616C12.3141 11.8095 11.6858 11.8095 11.2356 11.4616L5.6886 7.17537C5.36083 6.9221 4.88982 6.98249 4.63655 7.31026C4.38328 7.63802 4.44367 8.10904 4.77144 8.3623L10.3185 12.6486C11.3089 13.4138 12.691 13.4138 13.6814 12.6486L19.2285 8.3623Z"
+                fill={darkMode ? "#fafafa" : "#08090A"}
+              />
             </g>
           </g>
         </svg>
@@ -173,7 +162,7 @@ export default function NavBar() {
         <button
           aria-label="theme-toggle button"
           className={`p-3 rounded-full cursor-pointer ${
-            darkMode ? "hover:bg-slate-700" : "hover:bg-slate-200"
+            darkMode ? "hover:bg-[#333]" : "hover:bg-[#eee]"
           }`}
           onClick={toggleTheme}
         >
