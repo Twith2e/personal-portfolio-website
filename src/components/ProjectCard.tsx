@@ -33,7 +33,7 @@ export default function ProjectCard({
             progress.toLowerCase().includes("completed")
               ? "bg-green-500"
               : "bg-blue-500"
-          } py-1 px-2 text-sm rounded-sm font-bold`}
+          } py-1 px-2 text-sm text-[#000] rounded-sm font-bold`}
         >
           {progress}
         </span>
