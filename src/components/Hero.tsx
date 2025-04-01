@@ -1,4 +1,4 @@
-import SkillList from "./SkillList";
+// import SkillList from "./SkillList";
 
 export default function Hero() {
   return (
@@ -159,7 +159,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <SkillList />
+        {/* <SkillList /> */}
       </div>
     </div>
   );
