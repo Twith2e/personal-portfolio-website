@@ -7,7 +7,7 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 
 export default function NavBar() {
-  const [isHidden, setIsHidden] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
   return (
     <nav
       className={`font-jakarta flex justify-between items-center py-5 md:px-12 px-6 bg-[#fff] text-[#2b2b2b]`}
