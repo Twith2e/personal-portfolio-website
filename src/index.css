@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/poppins-regular-webfont.woff2") format("woff2"),
+       url("/font/poppins-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 html {
   scroll-behavior: smooth;
