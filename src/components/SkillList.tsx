@@ -46,8 +46,7 @@ export default function SkillList() {
     },
     {
       language: "Express",
-      iconName: "devicon-express-original colored",
-      darkIcon: "devicon-express-original",
+      iconName: "devicon-express-original",
     },
     {
       language: "MongoDB",
@@ -67,8 +66,7 @@ export default function SkillList() {
     },
     {
       language: "Git Bash",
-      iconName: "devicon-bash-plain colored",
-      darkIcon: "devicon-bash-plain",
+      iconName: "devicon-bash-plain",
     },
     {
       language: "VSCode",
@@ -77,17 +75,10 @@ export default function SkillList() {
   ];
 
   return (
-    <div className="md:px-12 flex flex-col gap-9 font-jakarta mb-10">
-      <h2 className="text-3xl font-bold text-center">
-        Skills and Tools <span className="animate-bounce absolute">🛠️</span>
-      </h2>
-      <div className="flex gap-2 gap-y-6 flex-wrap">
+    <div className="flex flex-col gap-9 font-jakarta mb-10">
+      <div className="flex gap-2 gap-y-4 flex-wrap text-sm">
         {skillsArray.map((skill) => (
-          <Skill
-            language={skill.language}
-            iconName={skill.iconName}
-            darkIcon={skill.darkIcon}
-          />
+          <Skill language={skill.language} iconName={skill.iconName} />
         ))}
       </div>
     </div>

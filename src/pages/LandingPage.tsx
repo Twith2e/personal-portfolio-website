@@ -1,14 +1,13 @@
 import ContactForm from "../components/ContactForm";
 import Education from "../components/Education";
 import Hero from "../components/Hero";
-import SkillList from "../components/SkillList";
 import Projects from "../components/Projects";
 import { Helmet } from "react-helmet";
 import Experience from "../components/Experience";
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className={`flex flex-col gap-10 bg-[#2b2b2b] text-[#fff]`}>
       <Helmet>
         <title>Abdulbasit Adebajo | A Fullstack Developer</title>
         <meta
@@ -48,19 +47,16 @@ export default function LandingPage() {
       <section>
         <Hero />
       </section>
-      <section>
-        <SkillList />
-      </section>
-      <section>
+      <section id="xp">
         <Experience />
       </section>
-      <section>
+      <section id="projects">
         <Projects />
       </section>
-      <section>
+      <section id="education">
         <Education />
       </section>
-      <section>
+      <section id="contact">
         <ContactForm />
       </section>
     </div>

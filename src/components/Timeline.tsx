@@ -1,6 +1,3 @@
-import { useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
-
 const timelineData = [
   {
     logo: "/bells.webp",
@@ -12,43 +9,28 @@ const timelineData = [
 ];
 
 export default function Timeline() {
-  const { darkMode } = useContext(ThemeContext);
   return (
-    <div className="timeline font-jakarta">
+    <div className="timeline font-jakarta text-base">
       {timelineData.map((data, index) => (
         <div
-          className="timeline-item flex gap-1 items-center w-full"
+          className="timeline-item flex flex-col md:flex-row items-start gap-1 md:items-center w-full bg-white text-[#2b2b2b] px-3 py-3 rounded-lg border-[#2b2b2b]"
           key={index}
         >
           <img
             className="rounded-full"
-            height={100}
-            width={100}
+            height={120}
+            width={120}
             src={data.logo}
             alt={data.alt}
           />
           <div className="flex flex-col gap-2 w-full">
-            <div className="flex justify-between items-center timeline-content w-full text-sm">
-              <span
-                className={`font-[600] text-lg ${
-                  darkMode ? "text-[#fafafa]" : "text-[#08090A]"
-                }`}
-              >
+            <div className="flex flex-col md:flex-row items-start justify-between md:items-center w-full">
+              <span className={`font-[600] md:text-2xl text-lg`}>
                 {data.school}
               </span>
-              <span
-                className={`${darkMode ? "text-[#a3a3a3]" : "text-[#000]"}`}
-              >
-                {data.year}
-              </span>
+              <span>{data.year}</span>
             </div>
-            <span
-              className={`text-xs ${
-                darkMode ? "text-[#A3A3A3]" : "text-[#08090A]"
-              }`}
-            >
-              {data.degree}
-            </span>
+            <span>{data.degree}</span>
           </div>
         </div>
       ))}

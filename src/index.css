@@ -5,34 +5,30 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.left,.right {
-  position: relative;
-}
-
-.left::after, .right::after {
-  content: '';
-  position: absolute;
-  width: 1px; 
-  height: 100%;
-  background-color: #777;
-  top: 0;
-}
-
-.left::after {
-  left: 0;
-}
-
-.right::after {
-  right: 0;  
-}
-
 .font-jakarta {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-display: swap;
+  font-family: "Poppins", sans-serif;
+}
+
+.header{
+  margin: 40px auto;
+  position: relative;
+  width: fit-content;
+}
+
+.header::after{
+  background: #2E6F40;
+  border-radius: 10px;
+  bottom: -15px;
+  content: '';
+  height: 7px;
+  left: 0;
+  position: absolute;
+  width: 70%;
 }
 
 nav{
-  box-shadow:  0 -20px 80px -20px #ffffff1f
+  box-shadow:  0 -20px 80px -20px #ffffff1f;
 }
 
 @import 'tailwindcss'

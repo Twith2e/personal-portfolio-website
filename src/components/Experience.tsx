@@ -1,8 +1,4 @@
-import { ThemeContext } from "../contexts/ThemeContext";
-import { useContext } from "react";
-
 export default function Experience() {
-  const { darkMode } = useContext(ThemeContext);
   const experienceData = [
     {
       company: "SQI College of ICT ",
@@ -43,22 +39,14 @@ export default function Experience() {
   ];
 
   return (
-    <div className="text-[#333] font-jakarta md:px-12">
-      <h2
-        className={`font-bold text-3xl text-center mb-10 ${
-          darkMode ? "text-white" : "text-[#08090A]"
-        }`}
-      >
+    <div className="font-jakarta md:px-12 px-6">
+      <h2 className={`font-bold text-3xl text-center mb-10 header`}>
         Work Experience <span className="animate-bounce absolute">💼</span>
       </h2>
       <div className="flex flex-col gap-6 w-full">
         {experienceData.map((exp, index) => (
           <div
-            className={`flex md:flex-row flex-col gap-10 w-full p-5 rounded-md border-1 shadow-lg ${
-              darkMode
-                ? "border-[#fff] text-white bg-[#08090A]"
-                : "border-[#333] bg-white text-gray-800"
-            }`}
+            className={`flex md:flex-row flex-col gap-10 w-full p-5 rounded-md border-1 shadow-xs shadow-[#ccc] border-[#b3b3b3]`}
             key={index}
           >
             <picture>
@@ -69,22 +57,18 @@ export default function Experience() {
             <div className="w-full flex flex-col gap-3">
               <div className="flex flex-col gap-3 md:flex-row md:justify-between">
                 <h2 className="text-2xl font-bold">{exp.jobDescription}</h2>
-                <span className="text-xs font-semibold">{exp.date}</span>
+                <span className="text-sm font-semibold">{exp.date}</span>
               </div>
               <span className="text-sm">
                 <a
-                  className="hover:text-blue-500"
+                  className="hover:text-[#adebb3]"
                   href={exp.website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {exp.company}
                 </a>
-                <span
-                  className={`mx-2 border-r-1 ${
-                    !darkMode ? "border-r-gray-800" : "border-r-white"
-                  }`}
-                ></span>
+                <span className={`mx-2 border-r-1 border-r-white`}></span>
                 <span>{exp.location}</span>
               </span>
               <ul className="list-disc ps-5 text-sm ">
@@ -93,7 +77,7 @@ export default function Experience() {
                     <span className="mr-3">{achievement}</span>
                     {exp.links?.[index] ? (
                       <a
-                        className="underline hover:text-blue-500 text-blue-800"
+                        className="underline text-[#68ba7f] hover:text-[#adebb3] font-bold"
                         href={exp.links[index]}
                         target="_blank"
                         rel="noopener noreferrer"
