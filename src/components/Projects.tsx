@@ -10,7 +10,7 @@ export default function Projects() {
       <h2 className="text-center text-3xl font-bold header">
         Featured Projects
       </h2>
-      <span className="text-base">
+      <span className="text-lg md:text-xl">
         I build projects from 0 to 1, turning ideas into reality. Take a look at
         some of my favorite projects below.
       </span>

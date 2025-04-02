@@ -26,18 +26,20 @@ export default function ProjectCard({
           alt="project-screenshot"
         />
       </picture>
-      <h2 className="text-lg font-bold px-2">{sitename}</h2>
-      <div className="flex gap-2 items-center px-2">
+      <h2 className="text-lg font-bold mx-3 mt-3 mb-1 project-name">
+        {sitename}
+      </h2>
+      <div className="flex gap-2 items-center px-3 mb-3">
         <span
           className={`${
             progress.toLowerCase().includes("completed")
               ? "bg-green-500"
               : "bg-blue-500"
-          } py-1 px-2 text-sm text-[#000] rounded-sm font-bold`}
+          } py-1 px-2 text-sm text-[#fff] rounded-sm font-semibold`}
         >
           {progress}
         </span>
-        <span className="text-sm">{date}</span>
+        <span className="text-sm font-bold">{date}</span>
       </div>
       <div className="flex flex-col gap-3 px-2 font-jakarta">
         <p className={`text-sm text-[#333]`}>{summary}</p>
@@ -54,7 +56,7 @@ export default function ProjectCard({
         <div className="flex gap-2 items-center mt-3">
           {links.map((link, index) => (
             <a
-              className={`flex items-center gap-2 text-sm font-semibold w-fit py-1 px-2 rounded-lg hover:scale-[1.04] bg-[#333] text-[#fafafa]`}
+              className={`flex items-center gap-2 text-sm font-semibold w-fit py-1 px-2 rounded-sm hover:scale-[1.04] bg-[#333] text-[#fafafa]`}
               key={index}
               href={link.url}
               rel="noopener noreferrer"

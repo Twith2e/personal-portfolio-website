@@ -32,6 +32,22 @@ html {
   width: 70%;
 }
 
+.project-name {
+  position: relative !important;
+  width: fit-content;
+}
+
+.project-name::after {
+  background: #2E6F40;
+  border-radius: 10px;
+  bottom: 2px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%; 
+}
+
 nav{
   box-shadow:  0 -20px 80px -20px #ffffff1f;
 }

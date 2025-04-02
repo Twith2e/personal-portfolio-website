@@ -4,73 +4,99 @@ export default function SkillList() {
   const skillsArray = [
     {
       language: "HTML",
-      iconName: "devicon-html5-plain colored",
+      iconName: "#html-124-svgrepo-com",
+      fill: "#E34F26",
     },
     {
       language: "CSS",
-      iconName: "devicon-css3-plain colored",
+      iconName: "#css3-02-svgrepo-com",
+      fill: "#1572B6",
     },
     {
       language: "Bootstrap",
-      iconName: "devicon-bootstrap-plain colored",
+      iconName: "#bootstrap-fill-svgrepo-com",
+      fill: "#6610f2",
     },
     {
       language: "TailwindCSS",
-      iconName: "devicon-tailwindcss-original colored",
+      iconName: "#tailwind-svgrepo-com",
+      fill: "#06B6D4",
     },
     {
       language: "JavaScript",
-      iconName: "devicon-javascript-plain colored",
+      iconName: "#js01-svgrepo-com",
+      fill: "#F7DF1E",
     },
 
     {
       language: "TypeScript",
-      iconName: "devicon-typescript-plain colored",
+      iconName: "#typescript-svgrepo-com",
+      fill: "#3178C6",
     },
     {
       language: "ReactJs",
-      iconName: "devicon-react-original colored",
+      iconName: "#react-svgrepo-com",
+      fill: "#61DAFB",
     },
 
     {
       language: "Redux",
-      iconName: "devicon-redux-original colored",
+      iconName: "#redux-svgrepo-com",
+      fill: "#764ABC",
     },
     {
       language: "AngularJs",
-      iconName: "devicon-angularjs-plain colored",
+      iconName: "#angular-svgrepo-com",
+      fill: "#B52E31",
     },
     {
       language: "NodeJs",
-      iconName: "devicon-nodejs-plain-wordmark colored",
+      iconName: "#node-js-svgrepo-com",
+      fill: "#68A063",
     },
     {
       language: "Express",
-      iconName: "devicon-express-original",
+      iconName: "#express-svgrepo-com",
+    },
+    {
+      language: "Flask",
+      iconName: "#flask-svgrepo-com",
+      fill: "#000000",
     },
     {
       language: "MongoDB",
-      iconName: "devicon-mongodb-plain colored",
+      iconName: "#mongo-svgrepo-com",
+      fill: "#3FA037",
+    },
+    {
+      language: "SqLite",
+      iconName: "#sqlite-svgrepo-com",
+      fill: "#5ab1e3",
     },
     {
       language: "Redis",
-      iconName: "devicon-redis-plain colored",
+      iconName: "#redis-svgrepo-com",
+      fill: "#D82C20",
     },
     {
       language: "Firebase",
-      iconName: "devicon-firebase-plain colored",
+      iconName: "#firebase-svgrepo-com",
+      fill: "#FF9100",
     },
     {
       language: "Git",
-      iconName: "devicon-git-plain colored",
+      iconName: "#git-svgrepo-com",
+      fill: "#bd2c00",
     },
     {
       language: "Git Bash",
-      iconName: "devicon-bash-plain",
+      iconName: "#terminal-bash-svgrepo-com",
+      fill: "#000000",
     },
     {
       language: "VSCode",
-      iconName: "devicon-vscode-plain colored",
+      iconName: "#vscode-svgrepo-com",
+      fill: "#007ACC",
     },
   ];
 
@@ -78,7 +104,11 @@ export default function SkillList() {
     <div className="flex flex-col gap-9 font-jakarta mb-10">
       <div className="flex gap-2 gap-y-4 flex-wrap text-sm">
         {skillsArray.map((skill) => (
-          <Skill language={skill.language} iconName={skill.iconName} />
+          <Skill
+            language={skill.language}
+            iconName={skill.iconName}
+            fill={skill.fill}
+          />
         ))}
       </div>
     </div>
