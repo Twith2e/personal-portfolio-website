@@ -71,7 +71,6 @@ export default function SkillList() {
     {
       language: "SqLite",
       iconName: "#sqlite-svgrepo-com",
-      fill: "#5ab1e3",
     },
     {
       language: "Redis",
