@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import { Helmet } from "react-helmet";
 import Experience from "../components/Experience";
+import DownloadCv from "../components/DownloadCv";
 
 export default function LandingPage() {
   return (
@@ -53,9 +54,13 @@ export default function LandingPage() {
       <section id="projects">
         <Projects />
       </section>
+      <section className="flex justify-center" id="cv">
+        <DownloadCv />
+      </section>
       <section id="education">
         <Education />
       </section>
+
       <section id="contact">
         <ContactForm />
       </section>
