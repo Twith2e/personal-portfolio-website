@@ -4,12 +4,10 @@ export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
-
   const { name, email, message } = req.body;
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Missing required fields" });
   }
-
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -21,7 +19,6 @@ export default async function handler(req, res) {
       accessToken: process.env.GOOGLE_ACCESS_TOKEN,
     },
   });
-
   try {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
