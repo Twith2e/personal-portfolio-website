@@ -38,11 +38,10 @@ export default function SkillList() {
       iconName: "#react-svgrepo-com",
       fill: "#61DAFB",
     },
-
     {
-      language: "Redux",
-      iconName: "#redux-svgrepo-com",
-      fill: "#764ABC",
+      language: "NextJs",
+      iconName: "#next-js-svgrepo-com",
+      fill: "#000000",
     },
     {
       language: "AngularJs",
@@ -59,18 +58,9 @@ export default function SkillList() {
       iconName: "#express-svgrepo-com",
     },
     {
-      language: "Flask",
-      iconName: "#flask-svgrepo-com",
-      fill: "#000000",
-    },
-    {
       language: "MongoDB",
       iconName: "#mongo-svgrepo-com",
       fill: "#3FA037",
-    },
-    {
-      language: "SqLite",
-      iconName: "#sqlite-svgrepo-com",
     },
     {
       language: "Redis",
@@ -81,21 +71,6 @@ export default function SkillList() {
       language: "Firebase",
       iconName: "#firebase-svgrepo-com",
       fill: "#FF9100",
-    },
-    {
-      language: "Git",
-      iconName: "#git-svgrepo-com",
-      fill: "#bd2c00",
-    },
-    {
-      language: "Git Bash",
-      iconName: "#terminal-bash-svgrepo-com",
-      fill: "#000000",
-    },
-    {
-      language: "VSCode",
-      iconName: "#vscode-svgrepo-com",
-      fill: "#007ACC",
     },
   ];
 

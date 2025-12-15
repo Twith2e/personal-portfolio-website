@@ -12,11 +12,8 @@ export default function Hero() {
             Hi, I'm Abdulbasit 👋
           </h1>
           <p className="md:text-xl">
-            Passionate developer with a love for creating innovative solutions.
-            I specialize in software development and enjoy working with various
-            technologies to bring ideas to life. My goal is to build
-            applications that are not only functional but also user-friendly and
-            visually appealing.🤠
+            A software engineer with 2 years experience in building clean user
+            interfaces, fullstack applications and realtime features.
           </p>
           <div className="my-3 flex gap-2">
             <a

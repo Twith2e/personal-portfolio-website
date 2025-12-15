@@ -7,14 +7,7 @@ export const projectsInfos = [
     progress: "Completed",
     date: "Apr 2025",
     summary: "This is a venue booking platform with payment integration.",
-    languages: [
-      "React",
-      "Tailwindcss",
-      "TypeScript",
-      "CSS3",
-      "Paystack",
-      "Tanstack Query",
-    ],
+    languages: ["React", "TypeScript", "Paystack", "Tanstack Query"],
     links: [
       {
         url: "https://venueri.com",
@@ -41,7 +34,7 @@ export const projectsInfos = [
     progress: "Completed",
     date: "Dec 2025",
     summary: "This is charity donation platform.",
-    languages: ["Nextjs", "Tailwindcss", "TypeScript", "CSS3", "Paystack"],
+    languages: ["Nextjs", "TypeScript", "Paystack"],
     links: [
       {
         url: "https://btscars.org",
@@ -69,7 +62,7 @@ export const projectsInfos = [
     date: "Sept 2024",
     summary:
       "This is a website for a construction company located in Abuja, Nigeria that deals with renovation as well full on constructions handling from the design down to the final product.",
-    languages: ["HTML5", "CSS3", "JavaScript", "EmailJs"],
+    languages: ["Nextjs", "TypeScript"],
     links: [
       {
         url: "https://boltandbeams.com.ng",
@@ -114,7 +107,7 @@ export const projectsInfos = [
     date: "Oct 2024",
     summary:
       "Shoplift is a multi-vendor e-commerce web app. Sellers can list products with prices, upload up to fours images for each product, they can add as many features as they want for each product; they also have a dashboard for monitoring products sold, total sales made; they can as well monitor products quantity, update the quantity, edit and change products description, name and features. Buyers can search for products and either buy searched prouduct or add the product cart, and for better user experience, buyers can view similar items when previewing a product.",
-    languages: ["HTML", "CSS", "JavaScript", "Toast", "Paystack", "Firebase"],
+    languages: ["HTML", "CSS", "JavaScript", "Paystack", "Firebase"],
     links: [
       {
         url: "https://shoplift-333fe.web.app",
@@ -159,7 +152,7 @@ export const projectsInfos = [
     date: "Oct 2024",
     summary:
       "This is a travel agency web app when you can book for tours and a flight for the tours, you can book hotel rooms for your stay at your preferred destination. You can also check your bookings history to keep track of your amazing adventures.",
-    languages: ["HTML", "CSS", "JavaScript", "Toast", "Paystack", "Firebase"],
+    languages: ["HTML", "CSS", "JavaScript", "Paystack", "Firebase"],
     links: [
       {
         url: "https://trav-el.web.app",
@@ -187,15 +180,7 @@ export const projectsInfos = [
     date: "Feb 2025",
     summary:
       "This is the current site. Key features are props generated project banners, work experience banner, education and skills list; auto detection of systems theme settings to toggle between light and dark theme; vercel serverless feature for sending emails using nodemailer as the transporter via the contact form",
-    languages: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Nodemailer",
-      "React Hook Form",
-      "Vercel",
-      "Zod",
-    ],
+    languages: ["React", "TypeScript"],
     links: [
       {
         url: "https://abdulbasitadebajo.vercel.app",
@@ -239,8 +224,7 @@ export const projectsInfos = [
     sitename: "Buzz",
     progress: "Completed",
     date: "Dec 2025",
-    summary:
-      "A realtime messaging app where users can text, call, video chat, send files, create groups, upload stories and receive notifications",
+    summary: "A realtime messaging app for instant messaging and calls",
     languages: [
       "ReactJS",
       "NodeJS",
@@ -294,7 +278,7 @@ export const projectsInfos = [
     progress: "In Progress",
     date: "Feb 2025",
     summary: "This is a an ecommerce web app for an imaginary brand.",
-    languages: ["Nextjs", "Tailwindcss", "TypeScript", "CSS3"],
+    languages: ["Nextjs", "TypeScript"],
     links: [
       {
         url: "https://oja-nine.vercel.app",
@@ -340,13 +324,7 @@ export const projectsInfos = [
     date: "Jan 2025",
     summary:
       "This is a tool built with NextJS, it uses the native filereader API alongside other external APIs to read digital book, extracts cover page and words from the book and returns them sectioned per chapter.",
-    languages: [
-      "Nextjs",
-      "Epubjs",
-      "TailwindCSS",
-      "TypeScript",
-      "FileReader API",
-    ],
+    languages: ["Nextjs", "Epubjs", "TypeScript", "FileReader API"],
     links: [
       {
         url: "https://word-indexer.vercel.app",
@@ -391,13 +369,7 @@ export const projectsInfos = [
     progress: "In Progress",
     date: "March 2025",
     summary: "This is an inventory and sales management system.",
-    languages: [
-      "AngularJs",
-      "Tailwind CSS",
-      "Angular Material",
-      "NodeJs",
-      "Express",
-    ],
+    languages: ["AngularJs", "Tailwind", "NodeJs", "ExpressJs"],
     links: [
       // {
       //   url: "https://boltandbeams.com.ng",
