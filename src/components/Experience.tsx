@@ -10,8 +10,7 @@ export default function Experience() {
         {experienceData.map((exp, index) => (
           <div
             className={`flex md:flex-row flex-col gap-10 w-full p-5 rounded-md border-1 shadow-xs shadow-[#ccc] border-[#b3b3b3]`}
-            key={index}
-          >
+            key={index}>
             <picture>
               <source srcSet={exp.avif} type="image/avif" />
               <source srcSet={exp.webp} type="image/webp" />
@@ -27,8 +26,7 @@ export default function Experience() {
                   className="hover:text-[#adebb3]"
                   href={exp.website}
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   {exp.company}
                 </a>
                 <span className={`mx-2 border-r-1 border-r-white`}></span>
@@ -38,18 +36,6 @@ export default function Experience() {
                 {exp.achievements.map((achievement, index) => (
                   <li className="" key={index}>
                     <span className="mr-3">{achievement}</span>
-                    {exp.links?.[index] ? (
-                      <a
-                        className="underline text-[#68ba7f] hover:text-[#adebb3] font-bold"
-                        href={exp.links[index]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        LINK
-                      </a>
-                    ) : (
-                      ""
-                    )}
                   </li>
                 ))}
               </ul>
