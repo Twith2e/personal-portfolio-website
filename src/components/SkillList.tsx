@@ -1,3 +1,4 @@
+import { SiGo, SiNextdotjs } from "react-icons/si";
 import Skill from "../components/Skill";
 
 export default function SkillList() {
@@ -39,9 +40,12 @@ export default function SkillList() {
       fill: "#61DAFB",
     },
     {
-      language: "NextJs",
-      iconName: "#next-js-svgrepo-com",
-      fill: "#000000",
+      language: "Next.js",
+      icon: <SiNextdotjs size={24} color="#000000" />,
+    },
+    {
+      language: "Go",
+      icon: <SiGo size={24} color="#00ADD8" />,
     },
     {
       language: "AngularJs",
@@ -79,9 +83,11 @@ export default function SkillList() {
       <div className="flex gap-2 gap-y-4 flex-wrap text-sm">
         {skillsArray.map((skill) => (
           <Skill
+            key={skill.language}
             language={skill.language}
             iconName={skill.iconName}
             fill={skill.fill}
+            icon={skill.icon}
           />
         ))}
       </div>

@@ -12,7 +12,7 @@ export default function Hero() {
             Hi, I'm Abdulbasit 👋
           </h1>
           <p className="md:text-xl">
-            A software engineer with 2 years experience in building clean user
+            A software engineer with 3 years experience in building clean user
             interfaces, fullstack applications and realtime features.
           </p>
           <div className="my-3 flex gap-2">

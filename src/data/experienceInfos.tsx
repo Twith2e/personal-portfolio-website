@@ -16,6 +16,22 @@ export const experienceData = [
     ],
     website: "https://edu.sqi.ng",
   },
+  // {
+  //   company: "Neat Pay",
+  //   jobDescription: "Backend Developer",
+  //   location: "Ibadan, Nigeria",
+  //   date: "Feb 2026 - Till Date",
+  //   avif: "/neat_pay.avif",
+  //   webp: "/neat_pay.webp",
+  //   src: "/neat_pay.png",
+  //   achievements: [
+  //     "Built backend services for the Neat Pay microcredit platform using Go.",
+  //     "Developed and maintained APIs powering core operational workflows across the platform.",
+  //     "Supported backend integrations for the dashboard and internal staff-facing features.",
+  //     "Contributed to a reliable service layer for loan, customer, and transaction-related processes.",
+  //   ],
+  //   website: "https://neatmc.mode3.tech/",
+  // },
   {
     company: "Venueri",
     jobDescription: "Frontend Developer",
