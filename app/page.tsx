@@ -7,8 +7,11 @@ import Experience from "@/features/landing-page/Experience";
 import SideQuests from "@/features/landing-page/SideQuests";
 import Contact from "@/features/landing-page/Contact";
 import Footer from "@/components/layout/Footer";
+import { getCurrentYear } from "@/lib/year";
 
-export default function Home() {
+export default async function Home() {
+  const year = await getCurrentYear();
+
   return (
     <>
       <header className="bg-background fixed top-0 left-0 w-full h-20.5 z-50">
@@ -24,7 +27,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer>
-        <Footer />
+        <Footer year={year} />
       </footer>
     </>
   );
