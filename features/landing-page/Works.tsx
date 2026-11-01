@@ -5,7 +5,7 @@ import WorkCard from "./WorkCard";
 
 const Works = () => {
   return (
-    <div className="px-3 lg:px-35 mt-24" id="projects">
+    <div className="px-3 lg:px-35 pt-24" id="projects">
       <h2 className="section-heading">SELECTED WORKS</h2>
       <h3 className="section-subheading">The starting lineup</h3>
       <p className="section-description">

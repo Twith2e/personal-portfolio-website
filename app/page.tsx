@@ -17,7 +17,7 @@ export default async function Home() {
       <header className="bg-background fixed top-0 left-0 w-full h-20.5 z-50">
         <Navbar />
       </header>
-      <main className="mt-24 pb-14">
+      <main className="pt-24 pb-14" id="top">
         <Hero />
         <Strip />
         <Works />

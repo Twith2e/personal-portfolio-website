@@ -5,7 +5,7 @@ import {
   HorseIcon,
   SoccerBallIcon,
 } from "@phosphor-icons/react";
-import { Experience, Quest, SelectedWork, Skill } from "./types";
+import type { Experience, HotTake, Quest, SelectedWork, Skill } from "./types";
 
 export const selectedWorks: Array<SelectedWork> = [
   {
@@ -333,5 +333,35 @@ export const quests: Array<Quest> = [
     quest: "Movies",
     icon: FilmSlateIcon,
     desc: "I stay for the credits. Yes, all of them. Somebody has to read the names of the people who fixed the bugs.",
+  },
+];
+
+export const AWAY_TITLE = "Come back, it's your move";
+
+export const hotTakes: Array<HotTake> = [
+  {
+    id: 1,
+    hot_take:
+      "I offered to sacrifice my queen to ship on time. My project manager said that wasn't in scope.",
+  },
+  {
+    id: 2,
+    hot_take:
+      "Debugging is a detective movie where you're also the culprit. The twist is always a missing semicolon.",
+  },
+  {
+    id: 3,
+    hot_take:
+      "Offside rules and CSS specificity: two things nobody agrees on until someone replays the footage.",
+  },
+  {
+    id: 4,
+    hot_take:
+      "I tried stand-up. 'It works on my machine' only kills in rooms full of developers.",
+  },
+  {
+    id: 5,
+    hot_take:
+      "My code has a lot in common with my football team: great on paper, chaotic in the final minutes.",
   },
 ];

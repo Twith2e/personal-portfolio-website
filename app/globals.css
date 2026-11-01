@@ -55,10 +55,10 @@ body {
 }
 
 .section-subheading {
-    font-size: 3.75rem;
+    font-size: clamp(2.25rem, 8vw, 3.75rem);
     font-weight: 800;
     letter-spacing: -3%;
-    line-height: 3.75rem;
+    line-height: 1;
     margin-block: 0.75rem;
 }
 
@@ -66,4 +66,56 @@ body {
     font-size: 0.75rem;
     color: var(--muted);
     line-height: 1.6875rem;
+}
+
+.dashed-border {
+    --dash: 12 !important; /* dash length */
+    --gap: 8 !important; /* gap length */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23a9b3a9' stroke-width='2' stroke-dasharray='12%2C8' stroke-linecap='square'/%3E%3C/svg%3E") !important;
+}
+
+.anchor {
+    position: relative;
+}
+
+.anchor::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    bottom: -3px;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 500ms ease 100ms;
+}
+
+.anchor:hover::after {
+    transform: ScaleX(1);
+    transform-origin: left;
+}
+
+button {
+    cursor: pointer;
+    transition:
+        transform 200ms ease,
+        filter 200ms ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+a {
+    transition: text-shadow 200ms ease;
+}
+
+a:hover {
+    text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 60%, transparent);
 }

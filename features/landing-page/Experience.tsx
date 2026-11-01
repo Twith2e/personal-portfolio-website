@@ -5,7 +5,7 @@ import ExperienceSheet from "./ExperienceSheet";
 
 const Experience = () => {
   return (
-    <div className="px-3 lg:px-35 mt-24">
+    <div className="px-3 lg:px-35 pt-24">
       <h2 className="section-heading" id="experience">
         EXPERIENCE
       </h2>

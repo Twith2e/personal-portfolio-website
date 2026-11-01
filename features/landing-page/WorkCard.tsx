@@ -20,40 +20,42 @@ const WorkCard = ({
   return (
     <div
       key={id}
-      className="bg-surface p-7 rounded-[18px] border border-line space-y-4"
+      className="bg-surface p-7 rounded-[18px] border border-line flex flex-col justify-between"
     >
-      <div className="flex justify-between items-center text-[.8125rem] font-mono">
-        <span className="text-muted">{tag}</span>
-        <span className="text-accent">{ref}</span>
+      <div className="space-y-4">
+        <div className="flex justify-between items-center text-[.8125rem] font-mono">
+          <span className="text-muted">{tag}</span>
+          <span className="text-accent">{ref}</span>
+        </div>
+        <div className="dashed-border relative rounded-xl h-50 overflow-hidden hover:scale-[1.03] transition duration-300 cursor-pointer">
+          {image && (
+            <Image
+              className="object-contain"
+              src={image}
+              alt={name ?? ""}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+          )}
+        </div>
+        <h2 className="text-[1.75rem] font-bold tracking-[-2%]">{name}</h2>
+        <p className="text-muted text-[1.06235rem] leading-[1.59375rem]">
+          {description}
+        </p>
+        <p className="font-medium">&quot;{witty_comment}&quot;</p>
+        <div className="flex gap-3 items-center flex-wrap">
+          {Array.isArray(stack) &&
+            stack.map((s) => (
+              <div
+                key={s.id}
+                className="border border-line rounded-full px-3 py-1.25 text-muted text-xs font-mono"
+              >
+                <span>{s.name}</span>
+              </div>
+            ))}
+        </div>
       </div>
-      <div className="relative border border-dashed rounded-xl h-50 overflow-hidden">
-        {image && (
-          <Image
-            className="object-cover"
-            src={image}
-            alt={name ?? ""}
-            fill
-            sizes="(min-width: 1024px) 50vw, 100vw"
-          />
-        )}
-      </div>
-      <h2 className="text-[1.75rem] font-bold tracking-[-2%]">{name}</h2>
-      <p className="text-muted text-[1.06235rem] leading-[1.59375rem]">
-        {description}
-      </p>
-      <p className="font-medium">&quot;{witty_comment}&quot;</p>
-      <div className="flex gap-3 items-center flex-wrap">
-        {Array.isArray(stack) &&
-          stack.map((s) => (
-            <div
-              key={s.id}
-              className="border border-line rounded-full px-3 py-1.25 text-muted text-xs font-mono"
-            >
-              <span>{s.name}</span>
-            </div>
-          ))}
-      </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 mt-4">
         {link && (
           <Link
             className="flex gap-1 text-accent text-[1.06235rem] items-center"

@@ -1,22 +1,24 @@
 "use client";
 
 import { ArrowUpIcon } from "@phosphor-icons/react";
-import Link from "next/link";
 
 const Footer = ({ year }: { year: number }) => {
   return (
-    <nav className="px-3 lg:px-35 flex justify-between items-center mb-14">
+    <div className="px-3 lg:px-35 flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center mb-14">
       <p className="font-mono text-xs text-muted">
-        &copy; {year} Abdulbasit Adebajo. No pieces were
-        harmed. Mostly pawns.
+        &copy; {year} Abdulbasit Adebajo. No pieces were harmed. Mostly pawns.
       </p>
-      <Link
-        href="/#top"
+      <a
+        href="#top"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("top")?.scrollIntoView({ behavior: "smooth" });
+        }}
         className="flex items-center gap-1 font-mono text-xs text-muted"
       >
         Back to kick-off <ArrowUpIcon />
-      </Link>
-    </nav>
+      </a>
+    </div>
   );
 };
 

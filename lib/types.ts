@@ -46,3 +46,8 @@ export type Quest = {
   quest: string;
   desc: string;
 };
+
+export type HotTake = {
+  id: number;
+  hot_take: string;
+};

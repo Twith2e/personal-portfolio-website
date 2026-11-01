@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Portfolio icon</title>
+  <rect width="64" height="64" rx="14" fill="#F5C842"/>
+  <g fill="#0E1411">
+    <circle cx="32" cy="20" r="8.5"/>
+    <rect x="22" y="29" width="20" height="5" rx="2.5"/>
+    <path d="M26 33H38C38 40 41 44 43.5 48H20.5C23 44 26 40 26 33Z"/>
+    <rect x="16" y="48" width="32" height="8" rx="4"/>
+  </g>
+</svg>
